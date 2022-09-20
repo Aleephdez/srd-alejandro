@@ -14,48 +14,56 @@ En esta primera práctica, vamos a instalar y configurar las máquinas virtuales
 
 ### 2.1 Ubuntu Cliente
 
-Creamos una máquina virtual con las siguientes características e instalamos Ubuntu 20.04.
+- Creamos una máquina virtual con las siguientes características e instalamos Ubuntu 20.04.
 
 ![](img/10.png)
 
-Iniciamos la máquina y comprobamos que funciona:
+- Iniciamos la máquina y comprobamos que funciona:
 
 ![](img/12.png)
 
 ### 2.1 Ubuntu Server
 
-Para esta máquina simplemente clonamos la máquina anterior y le añadimos una configuración de red estática:
+- Para esta el Ubuntu Server, simplemente clonamos la máquina anterior y le añadimos una configuración de red estática:
 
 ![](img/11.png)
 
-Más adelantes lo seguiremos configurando paa que actúe como servidor.
+- Más adelantes lo seguiremos configurando para que actúe como servidor.
 
 ### 2.2 Windows Server y Cliente
 
-Creamos una máquina virtual con las siguientes características e instalamos Windows Server 2016:
+- Creamos una máquina virtual con las siguientes características e instalamos Windows Server 2016:
 
 ![](img/13.png)
 
-Una vez dentro, le asignamos una configuración de red estática:
+- Una vez dentro, le asignamos una configuración de red estática:
 
 ![](img/1.png)
 
-A continuación, instalamos Active Directory y promovemos el servidor a Controlador de Dominio:
+- A continuación, instalamos Active Directory y promovemos el servidor a Controlador de Dominio:
 
 ![](img/3.png)
 
 ![](img/4.png)
 
-Creamos un usuario, un grupo y una unidad organizativa de prueba:
+- Creamos un usuario, un grupo y una unidad organizativa de prueba:
 
 ![](img/6.png)
 
 ![](img/7.png)
 
-Por último, vamos a la máquina cliente Windows 10 y la añadimos al dominio creado previamente en nuestro servidor:
+![](img/18.png)
+
+- Por último, vamos a la máquina cliente Windows 10 y la añadimos al dominio creado previamente en nuestro servidor:
 
 ![](img/8.png)
 
-Comprobamos que todo ha salido bien iniciando sesión con un el usuario `alejandro` que hemos creado previamente en el servidor:
+- Podemos ver que ahora la máquina cliente aparece en nuestro servidor:
+
+![](img/15.png)
+
+- Comprobamos que todo ha salido bien iniciando sesión con el usuario `alejandro` (que hemos creado previamente en el servidor) en nuestra máquina cliente.
 
 ![](img/9.png)
+
+![](img/16.png)

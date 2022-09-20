@@ -28,7 +28,7 @@ En esta primera práctica, vamos a instalar y configurar las máquinas virtuales
 
 ![](img/11.png)
 
-Más adelantes lo seguiremos configurando para que actúe como servidor.
+Más adelante lo seguiremos configurando para que actúe como servidor.
 
 ### 2.2 Windows Server y Cliente
 

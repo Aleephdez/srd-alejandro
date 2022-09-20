@@ -24,11 +24,11 @@ En esta primera práctica, vamos a instalar y configurar las máquinas virtuales
 
 ### 2.1 Ubuntu Server
 
-- Para esta el Ubuntu Server, simplemente clonamos la máquina anterior y le añadimos una configuración de red estática:
+- Para el Ubuntu Server, simplemente clonamos la máquina anterior y le añadimos una configuración de red estática:
 
 ![](img/11.png)
 
-- Más adelantes lo seguiremos configurando para que actúe como servidor.
+Más adelantes lo seguiremos configurando para que actúe como servidor.
 
 ### 2.2 Windows Server y Cliente
 

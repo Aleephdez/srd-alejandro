@@ -5,13 +5,13 @@ Nombre      : Alejandro de Paz Hernández
 Curso       : 2º de Ciclo Superior de Administración de Sistemas Informáticos en Red
 ```
 
-## 1. Introducción
+# 1. Introducción
 
 En esta práctica vamos a configurar e instalar el servicio DHCP (Dynamic Host Configuration Protocol) en una máquina Windows Server 2016. Este servicio se utiliza en entornos cliente-servidor, de forma que proporcione la información establecida en el servidor al cliente (o clientes) automáticamente. Dicha información consiste en direcciones IP, máscaras de subred, puertas de enlace... En definitiva, información relacionada con la red.
 
 ---
 
-## 2. Instalación del servicio DHCP
+# 2. Instalación del servicio DHCP
 
 - Entramos en la máquina Windows Server y vamos a `Administrar el Servidor → Agregar roles y características`. Cuando lleguemos a roles del servidor, seleccionamos `Servidor DHCP` e instalamos:
 
@@ -119,7 +119,7 @@ Ahora que sabemos configurar un ámbito, podemos crear un superámbito, que es l
 
 ---
 
-# 2.4 Cliente Windows (2)
+## 2.4 Cliente Windows (2)
 
 Vamos a comprobar el funcionamiento de nuestro segundo ámbito y de alguna opción de servidor:
 

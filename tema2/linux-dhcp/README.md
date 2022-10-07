@@ -36,9 +36,9 @@ Tras la instalación, tendremos una serie de archivos en `/etc/dhcp/`. Concretam
 
 ![](img/2.png)
 
-**Nota**:
+> **Nota**: Algunos de estos parámetros se pueden definir tanto dentro del ámbito como fuera de este, convirténdolos en parámetros globales. En caso de declararlos en ambos sitios, tendrán prioridad los que se encuentren en el ámbito.
 
-* Algunos de estos parámetros se pueden definir tanto dentro del ámbito como fuera de este, convirténdolos en parámetros globales. En caso de declararlos en ambos sitios, tendrán prioridad los que se encuentren en el ámbito.
+
 
 - Cada vez que modifiquemos este fichero, tendremos que reiniciar el servicio para que se efectúen los cambios. 
 

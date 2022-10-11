@@ -29,7 +29,7 @@ El objetivo de esta práctica es configurar un servicio DHCP failover (o conmuta
 
 - Antes de realizar las comprobaciones, tendremos que habilitar al servidor secundario para que pueda conceder IPs. Para ello `Click derecho sobre el servidor secundario (failover20)-> Autorizar`. En caso de que esto no funcione, tendremos que ir al propio servidor secundario y habilitarlo desde ahí. Si todo está bien configurado veremos un tick verde en ambos ámbitos.
 
-![](img/9.png)
+![](img/16.png)
 
 
 
@@ -37,8 +37,8 @@ El objetivo de esta práctica es configurar un servicio DHCP failover (o conmuta
 
 - Vamos a la máquina cliente, la ponemos en red interna (misma red interna que los servidores) y configuramos la IP en DHCP. Vemos que si ambos servidores están activos toma la IP del servidor principal:
 
-![](img/14.png)
+![](img/17.png)
 
-- Sin embargo, si desactivamos el DHCP del servidor principal, es el servidor secundario el que le concederá la IP:
+- Sin embargo, si desactivamos el DHCP del servidor principal, es el servidor secundario el que concede la IP:
 
 ![](img/14.png)

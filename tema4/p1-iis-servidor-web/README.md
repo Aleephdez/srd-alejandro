@@ -2,7 +2,6 @@
 
 ```
 Nombre      : Alejandro de Paz Hernández
-
 ```
 
 # 1. Introducción

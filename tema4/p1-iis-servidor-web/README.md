@@ -53,7 +53,7 @@ Comprobamos el acceso a los distintos directorios, tanto por nombre como por dir
 
 Vamos a crear dos nuevos sitios web independientes. Para ello, vamos a `Herramientas → Administrador de Internet Information Services (IIS)` y creamos un nuevo sitio web llamado `alejandro.edu`:
 
-![](img/7.png)
+![](img/17.png)
 
 Para poder acceder a este sitio web, crearemos una nueva zona de búsqueda directa en el DNS con el mismo nombre. Si ahora nos vamos al navegador e introducimos la dirección, vemos lo siguiente:
 

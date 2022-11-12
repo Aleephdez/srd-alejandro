@@ -41,7 +41,7 @@ Por último, creamos distintos directorios dentro de la ruta `C:\Inetpub\wwwroot
 
 ![](img/10.png)
 
-Comprobamos el acceso a los distintos directorios, tanto por nombre como por dirección IP:
+Comprobamos el acceso a los distintos directorios, tanto por nombre como por dirección IP y tanto desde el cliente como desde el servidor:
 
 ![](img/11.png)
 
@@ -89,4 +89,25 @@ En este último apartado vamos añadir directorios virtuales al sitio web `aleja
 
 ![](img/26.png)
 
-Si ahora accedemos desde un navegador
+Una vez creado, habilitamos el `Examen de directorios`. Esto hará que se listen automáticamente los ficheros y directorios cuando accedamos desde el navegador:
+
+![](img/30.png)
+
+Comprobamos accediendo desde el servidor y desde el cliente:
+
+![](img/27.png)
+
+![](img/28.png)
+
+Añadimos un `index.html` a cada departamento y comprobamos:
+
+![](img/31.png)
+
+![](img/32.png)
+
+![](img/33.png)
+
+En nuestro caso, solo tenemos el `index.html`, pero si tuviéramos más archivos podríamos especificar cuál queremos mostrar de forma predeterminada:
+
+![](img/34.png)
+

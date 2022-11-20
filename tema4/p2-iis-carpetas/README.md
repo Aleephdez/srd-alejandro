@@ -125,13 +125,15 @@ Acto seguido, deshabilitamos la herencia de todas las carpetas de `empleados`, i
 
 ![](img/31.png)
 
-Asignamos los permisos para cada carpeta, asignando el grupo `Administradores` y el usuario específico de cada carpeta. Para la carpeta `común`, añadiremos el grupo `empleados` para que todos los miembros tengan acceso:
+Asignamos los permisos para cada carpeta, asignando el grupo `Administradores` y el usuario específico de cada carpeta: 
 
 ![](img/33.png)
 
 ![](img/34.png)
 
 ![](img/35.png)
+
+Para la carpeta `común`, añadiremos el grupo `empleados` para que todos los miembros tengan acceso:
 
 ![](img/36.png)
 

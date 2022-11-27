@@ -136,17 +136,21 @@ Hacemos exactamente lo que nos dice el mensaje de error. Nos vamos a la carpeta 
 
 Introducimos la base de datos y el usuario que hemos creado previamente y continuamos con la instalación:
 
+![](img/90.png)
+
 ![](img/39.png)
 
 ![](img/40.png)
 
 Nos saltará el siguiente warning por problemas con el servidor de correo. Lo ignoramos y continuamos al sitio web:
 
+![](img/41.png)
+
 ![](img/42.png)
 
 Ahora ya tenemos Drupal instalado y solo nos queda configurarlo. Podemos instalar módulos y temas adicionales, para ello nos vamos a `www.drupal.org → Build → Modules` o `www.drupal.org → Build → Themes` y buscamos el complemento que queramos instalar (debe ser una versión compatible con nuestra versión de Drupal):
 
-![](img/43.png)
+![](img/45.png)
 
 Una vez encontremos tanto el complemento como la versión, descargamos el .zip, lo extraemos y copiamos en `C:\miEmpresa\principal\drupal-6.19\Modules` (si es un módulo) o `C:\miEmpresa\principal\drupal-6.19\Themes` (si es un tema) a través del cliente FTP:
 
@@ -158,7 +162,24 @@ Si ahora nos vamos a Drupal en `miempresa.com`, podremos encontrar y activar lo 
 
 ![](img/47.png)
 
-Para configurar 
+Para configurar una página dento de Drupal, nos vamos a `Create content → Page` y añadimos un título y una descripción:
+
+* Página 1:
+
+![](img/91.png)
+
+* Página 2:
+
+![](img/92.png)
+
+También podemos crear un **Primary Link** (un enlace a otra página), yendo a `Administer → Site building → Menus → Primary links → Add Item`:
+
+![](img/93.png)
+
+Para añadir este link y que nos aparezca en la página de inicio, vamos a `Administer → Site Building → Blocks` y arrastramos el bloque **Primary Links** a la región donde queramos mostarlo, en nuestro caso será la barra izquierda:
+
+![](img/94.png)
+
 
 # 5. Instalación y configuración de Coppermine
 

@@ -266,3 +266,9 @@ Añadimos una nueva página y la editamos:
 La publicamos y comprobamos el resultado:
 
 ![](img/80.png)
+
+También podemos crear nuevas entradas en el blog, desde la pestaña `Entradas`:
+
+![](img/75.png)
+
+![](img/76.png)

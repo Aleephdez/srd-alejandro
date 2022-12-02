@@ -73,11 +73,92 @@ Comprobamos el acceso desde el navegador:
 
 Para este segundo sitio web vamos a generar un certificado autofirmado para que el acceso sea por **HTTPS**. Para ello, utilizaremos la herramienta **openssl** que se instala por defecto al instalar Apache:
 
-Generamos una clave de 2048 bits.
+* Generamos una clave privada de 2048 bits y la guardamos en `server.key`. A partir de esa clave, generamos un certificado `server.csr` y rellenamos/omitimos los datos que se nos piden:
 
-![](img/17.png)
+![](img/27.png)
 
+* Firmamos dicho certificado nosotros mismos, generando un archivo `server.crt` que nos permitirá crear un sitio web seguro:
 
+![](img/28.png)
+
+A continuación, creamos el directorio `/etc/apache2/ssl` y copiamos los ficheros `server.key` y `server.crt`:
+
+![](img/20.png)
+
+Habilitamos el módulo ssl para Apache y reiniciamos el servicio:
+
+![](img/21.png)
+
+Ahora tendremos que crear el virtual host `pagos.miempresa.com`. Para ello, repetimos el proceso anterior → crear directorio y añadir el sitio web a `/etc/hosts`. Creamos el fichero 
+`/etc/apache2/sites-available/pagos.conf` con la siguiente configuración:
+
+![](img/22.png)
+
+Habilitamos el nuevo virtual host y accedemos a él desde el navegador:
+
+![](img/23.png)
+
+![](img/30.png)
+
+Vemos que el navegador nos muestra una advertencia, ya que el certificado ha sido firmado por nosotros mismos. Clickamos en *"Avanzado..."* y continuamos al sitio web:
+
+![](img/31.png)
+
+## 2.2 Carpetas Seguras
+
+Vamos a modificar el sitio web `empleados.miempresa.com` que hemos creado previamente para que solo puedan acceder unos usuarios determinados. También añadiremos un subdirectorio privado para cada usuario, de forma que solo pueda entrar el usuario propietario de ese subdirectorio y el administrador del sitio web.
+
+Lo primero será crear la estructura de subdirectorios dentro de `/var/www/empleados`. Vamos a crear tres carpetas, una para cada empleado:
+
+![](img/31.png)
+
+> Eliminamos también el `index.html`, ya que vamos a listar los contenidos del directorio.
+
+A continuación, tendremos que crear un `.htpasswd` por cada subdirectorio y uno para el sitio web. Cada uno de estos ficheros contendrá las credenciales válidas de acceso. Para entrar al sitio web, crearemos un fichero con el siguiente contenido:
+
+![](img/38.png)
+
+En cambio, para acceder al subdirectorio de un empleado crearemos el siguiente:
+
+![](img/39.png)
+
+Copiamos este último fichero para los usuarios `carla` y `diego`
+
+Una vez creados los ficheros con las credenciales, tendremos que crear un fichero `.htaccess` dentro de `/var/www/empleados` y otro dentro de cada subdirectorio que hayamos creado:
+
+* Fichero `.htaccess` en `/var/www/empleados`:
+
+![](img/43.png)
+
+* Fichero `.htaccess` en `/var/www/empleados/carla` para el usuario **carla** (repetimos para los usuarios/subdirectorios **diego** y **alejandro**):
+
+![](img/42.png)
+
+Comprobamos el acceso al sitio web desde el navegador. Si entramos como **administrador** veremos todos los subdirectorios y tendremos acceso a ellos:
+
+![](img/44.png)
+
+![](img/45.png)
+
+![](img/46.png)
+
+![](img/47.png)
+
+En cambio, si accedemos con el usuario **alejandro**, solo veremos y tendremos acceso al subdirectorio de dicho usuario:
+
+![](img/49.png)
+
+![](img/50.png)
+
+Ocurre lo mismo para el resto de usuarios:
+
+![](img/51.png)
+
+![](img/54.png)
+
+Si intentamos acceder a un subdirectorio que no esté listado, nos volverá a pedir credenciales. Solo podremos acceder con el usuario propietario del subdirectorio o con el usuario **administrador**:
+
+![](img/52.png)
 
 # 3. Instalación de PHP
 

@@ -110,7 +110,7 @@ Vamos a modificar el sitio web `empleados.miempresa.com` que hemos creado previa
 
 Lo primero será crear la estructura de subdirectorios dentro de `/var/www/empleados`. Vamos a crear tres carpetas, una para cada empleado:
 
-![](img/31.png)
+![](img/32.png)
 
 > Eliminamos también el `index.html`, ya que vamos a listar los contenidos del directorio.
 

@@ -147,6 +147,24 @@ Añadimos las cuentas restantes:
 
 ![](img/56.png)
 
+Dentro de hMailServer tenemos varias opciones de configuración:
+
+* Podemos elegir los protocolos que vamos a permitir/utilizar en nuestro servidor:
+
+![](img/62.png)
+
+* Podemos crear un filtro anti-spam. También tenemos integrado el software de SpamAssassin, que nos permite marcar como spam los mensajes de cierto host concreto:
+
+![](img/63.png)
+
+![](img/64.png)
+
+* Dentro de las opciones avanzadas, podemos auto banear a un cliente después de varios intentos de inicio de sesión fallidos. Existe también la posibilidad de bloquear rangos de IP's, establecer certificados SSL...:
+
+![](img/65.png)
+
+![](img/66.png)
+
 Nos vamos al cliente Windows y configuramos las cuentas en Thunderbird. Tenemos que seleccionar la configuración **POP3**, ya que **IMAP** dará error:
 
 ![](img/68.png)

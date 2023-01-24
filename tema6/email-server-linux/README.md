@@ -84,7 +84,7 @@ Ahora que hemos visto que funciona desde el servidor, vamos a probar desde un cl
 
 # 2.1. Servicio IMAP y servidor SquirrelMail
 
-A continuación, vamos a instalar el servicio IMAP. Utilizaremos **dovecot** -> `apt-get install dovecot-imapd`. Comprobamos que el servicio IMAP está activo y a la escucha:
+A continuación, vamos a instalar el servicio IMAP. Utilizaremos **dovecot** → `apt-get install dovecot-imapd`. Comprobamos que el servicio IMAP está activo y a la escucha:
 
 ![](img/21.png)
 
@@ -158,7 +158,9 @@ Vamos al cliente ahora:
 
 # 2.2. Servicio POP3
 
-Por último, vamos a instalar el servicio POP3, Utilizaremos **dovecot**, al igual que en el caso anterior, pero esta vez instalaremos el paquete pop3d: `apt-get install dovecot-pop3d`. Comprobamos que el servicio está activo y a la escucha:
+Por último, vamos a instalar el servicio POP3. Este servicio descarga todos los mensajes del servidor al que se conecta y los almacena en el cliente de forma local, eliminándolos del servidor.
+
+Utilizaremos **dovecot**, al igual que en el caso anterior, pero esta vez instalaremos el paquete pop3d → `apt-get install dovecot-pop3d`. Comprobamos que el servicio está activo y a la escucha:
 
 ![](img/47.png)
 
@@ -172,10 +174,23 @@ Ahora nos vamos al cliente:
 
 ![](img/60.png)
 
-* Comprobamos
+* Comprobamos en el cliente de correo:
 
 ![](img/61.png)
 
+* Sin embargo, si vamos al servidor vemos que en la carpeta `/var/spool/mail/ricky` no hay nada:
+
+![](img/62.png)
+
+* Enviamos otro mensaje, esta vez de **ricky@depaz20d.curso2223** a **alejandro@depaz20d.curso2223**:
+
+![](img/63.png)
+
+* Observamos que ocurre lo mismo:
+
+![](img/64.png)
+
+![](img/65.png)
 
 
 

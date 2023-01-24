@@ -1,12 +1,12 @@
 # Servidor de Correo - GNU/Linux Ubuntu 22.04
 
 ```
-Nombre      : Alejandro de Paz Hernández
+Alejandro de Paz Hernández
 ```
 
 # 1. Introducción
 
-Vamos a instalar y configurar dos servicios de correo en una máquina Windows 2016 Server. Primero, instalaremos el servicio SMTP que viene de forma nativa en Windows a través del administrador de aplicaciones (IIS) 6.0. Una vez hayamos configurado y probado este servicio de correo, instalaremos hMailServer; un servidor de correo de código abierto que nos ofrece más posibilidades y un mejor funcionamiento
+Vamos a instalar y configurar un servidor de correo en una máquina Ubuntu 22.04. Para ello, instalaremos los servicios **SMTP**, **IMAP** y **POP3** y probaremos su funcionamiento desde una máquina cliente.
 
 ---
 

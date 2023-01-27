@@ -84,7 +84,7 @@ Ahora que hemos visto que funciona desde el servidor, vamos a probar desde un cl
 
 # 2.1. Servicio IMAP y servidor SquirrelMail
 
-A continuación, vamos a instalar el servicio IMAP. Utilizaremos **dovecot** → `apt-get install dovecot-imapd`. Comprobamos que el servicio IMAP está activo y a la escucha:
+A continuación, vamos a instalar el servicio IMAP. Este servicio nos permitirá recibir los correos en el cliente, de forma que no tendremos que recurrir al servidor para visualizar el contenido de los mensajes. Utilizaremos **dovecot** → `apt-get install dovecot-imapd`. Comprobamos que el servicio IMAP está activo y a la escucha:
 
 ![](img/21.png)
 

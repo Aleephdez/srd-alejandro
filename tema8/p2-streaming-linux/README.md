@@ -6,7 +6,7 @@ Alejandro de Paz Hernández
 
 # 1. Introducción
 
-Vamos a instalar y configurar un servidor de mensajería instantánea, que nos permitirá establecer comunicación en tiempo real entre dos o más usuarios en formato texto. Para ello, utilizaremos el software **OpenFire** y **Spark**.
+Vamos a instalar y configurar un servidor de streaming, esta vez en Linux utilizando **Icecas2t** y **ices2**.
 
 ---
 

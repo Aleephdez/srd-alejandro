@@ -10,7 +10,7 @@ Vamos a instalar y configurar un servidor VoIP en Linux, que nos permitirá real
 
 ---
 
-# 2. Unreal Media Server
+# 2. FreePBX
 
 Descargamos la ISO de **[FreePBX](https://www.freepbx.org/)** y creamos una nueva MV con ella. Seleccionamos la instalación por defecto y esperamos a que termine:
 
@@ -43,6 +43,8 @@ Ahora nuestro servidor estará en funcionamiento. Nos vamos a `Applications → 
 > Hemos cambiado la extensión de 9000 a 100 debido a errores al utilizar la primera.
 
 Una vez creados, clickamos en `Apply Config` para actualizar el servidor. 
+
+# 3. Zoiper5
 
 Ahora que tenemos el servidor en funcionamiento, solo nos falta un cliente para realizar llamadas. Utilizaremos **zoiper5** para ello. Descargamos el software desde la página oficial y lo instalamos:
 

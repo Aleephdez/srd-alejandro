@@ -68,7 +68,7 @@ Creamos dos usuarios/extensiones más:
 
 A continuación, para comprobar que el servidor funciona y realizar llamadas, tendremos que solicitar un e-mail de recuperación de contraseña con cada usuario para poder iniciar sesión en los clientes desde el fichero que nos enviarán al correo (el código QR que nos proporcionan no funciona correctamente). Una vez hecho eso, descargamos la app 3CX Phone y abrimos el fichero con dicha aplicación. Por último, probamos a realizar una llamada:
 
-<img src="img/30.png" width="400px"></img>
+<img src="img/30.jpg" width="400px"></img>
 
 ![](img/21.png)
 
@@ -88,7 +88,7 @@ Probamos a realizar llamadas:
 
 También podemos realizar llamadas entre el cliente y el teléfono móvil:
 
-<img src="img/31.png" width="400px"></img>
+<img src="img/31.jpg" width="400px"></img>
 
 ![](img/28.png)
 

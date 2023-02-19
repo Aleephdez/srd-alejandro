@@ -1,4 +1,4 @@
-# Servicio de Streaming - Ubuntu 18.04
+# VoIP Windows
 
 ```
 Alejandro de Paz Hernández
@@ -6,79 +6,93 @@ Alejandro de Paz Hernández
 
 # 1. Introducción
 
-Vamos a instalar y configurar un servidor de streaming, esta vez en Linux utilizando **Icecas2t** y **ices2**.
+Vamos a instalar y configurar un servidor VoIP en Windows, que nos permitirá realizar llamadas de voz y vídeo entre distintos clientes.
 
 ---
 
-# 2. Icecast2
+# 2. 3CX Phone System
 
-Empezamos descargando e instalando el paquete **icecast2**:
+Lo primero será registrarnos en la página web de 3CX y descargar **[3CX Phone System](https://www.3cx.com/phone-system/)**. Antes de descargarlo, tendremos que elegir algunas opciones de configuración:
+
+* Elegimos la opción de autohospedado, que es la opción gratuita, y elegimos hospedarlo en nuestra propia máquina:
 
 ![](img/1.png)
 
-Una vez instalado, editamos el fichero de configuración `/etc/icecast2/icecast.xml` y modificamos las etiquetas `<source-password>, <admin-user> y <admin-password>` con los datos que queramos:
-
 ![](img/2.png)
 
-Editamos también el fichero `/etc/default/icecast` y añadimos la siguiente línea:
+* Seleccionamos un FQDN para el servidor:
 
 ![](img/3.png)
 
-Iniciamos el servicio e instalamos el codificador **ices2**:
+* Finalmente, seleccionamos la plataforma en la que vamos a instalar el servidor y copiamos la clave de activación:
 
 ![](img/4.png)
 
-Creamos un directorio para el codificador y copiamos el fichero de configuración por defecto:
+Al ejecutar el .exe, se nos abrirá un terminal con dos opciones. Elegimos la primera opción y procedemos a la instalación a través de un navegador:
 
 ![](img/5.png)
 
-Editamos dicho fichero e introducimos la información de nuestra radio:
+Introducimos la clave de activación y creamos un usuario:
 
 ![](img/6.png)
 
-Introducimos también la información referente al puerto de escucha y el punto de montaje. Si tenemos un servidor apache activo, tendremos que cambiar el puerto 8000, ya que Apache lo estará utilizando:
-
 ![](img/7.png)
 
-Descargamos ficheros de audio en formato *.ogg* e introducimos las rutas en el fichero `/etc/icecast2/playlist.txt`:
-
-![](img/8.png)
-
-Creamos el directorio `/var/log/ices2` y lo introducimos en el fichero de configuración de **ices2**. Ejecutamos el codificador en segundo plano y accedemos desde un navegador:
-
-![](img/22.png)
-
-![](img/9.png)
-
-Vemos que ya desde este panel tenemos la radio funcionando. Entramos al panel de administración con las credenciales definidas anteriormente:
-
-![](img/12.png)
-
-![](img/10.png)
-
-![](img/11.png)
-
-![](img/13.png)
-
-Podemos hacer lo mismo desde un cliente Windows, por ejemplo:
-
-![](img/19.png)
+Dejamos el resto de opciones como vienen por defecto hasta llegar a la siguiente ventana. Aquí introducimos el adaptador de red que utilizaremos y elegimos un servidor DNS que hayamos creado previamente:
 
 ![](img/20.png)
 
+Elegimos la longitud que tendrán nuestras extensiones y el idioma, país y zona horaria:
+
+![](img/12.png)
+
+![](img/13.png)
+
+Creamos una primera extensión que tendrá permisos de administrador. Habilitamos las llamadas desde España (vendrá marcado por defecto):
+
+![](img/14.png)
+
+![](img/15.png)
+
+![](img/16.png)
+
+Finalmente, la instalación se habrá completado y podremos poner en marcha el servidor a través de la url y contraseña que nos proporcionan:
+
+![](img/17.png)
+
+![](img/18.png)
+
+Creamos dos usuarios/extensiones más:
+
+![](img/19.png)
+
+A continuación, para comprobar que el servidor funciona y realizar llamadas, tendremos que solicitar un e-mail de recuperación de contraseña con cada usuario para poder iniciar sesión en los clientes desde el fichero que nos enviarán al correo (el código QR que nos proporcionan no funciona correctamente). Una vez hecho eso, descargamos la app 3CX Phone y abrimos el fichero con dicha aplicación. Por último, probamos a realizar una llamada:
+
+<img src="img/30.png" width="400px"></img>
+
 ![](img/21.png)
 
-Por último, podemos reproducir el audio desde un reproductor multimedia como **VLC**. Para ello, nos vamos a `Medio > Emitir > Red`:
+Vemos que la llamada queda registrada:
+
+![](img/22.png)
+
+Ahora vamos a probar desde un cliente Windows. Descargamos SIP softphone 3CX Phone y abrimos el fichero que nos ha llegado al correo con dicha aplicación:
+
+![](img/24.png)
+
+Probamos a realizar llamadas:
+
+![](img/25.png)
+
+![](img/26.png)
+
+También podemos realizar llamadas entre el cliente y el teléfono móvil:
+
+<img src="img/31.png" width="400px"></img>
 
 ![](img/28.png)
 
 ![](img/29.png)
-
-![](img/30.png)
-
-![](img/31.png)
-
-
 
 
 
